@@ -25,4 +25,5 @@ Pipes have two typical use cases:
 
 1. transformation: transform input data to the desired form (e.g., from string to integer)
 2. validation: evaluate input data and if valid, simply pass it through unchanged; otherwise, throw an exception when the data is incorrect
-   > [implementation-directory](./pipes/)
+
+> [implementation-directory](./pipes/)

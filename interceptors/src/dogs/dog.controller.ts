@@ -3,7 +3,10 @@ import { Body, Controller, Post } from '@nestjs/common';
 @Controller('dogs')
 export class DogController {
   @Post()
-  createDogEntry(@Body() body: any) {
+  async createDogEntry(@Body() body: any) {
+    await new Promise((resolve, reject) => {
+      setTimeout(resolve, 5000);
+    });
     const { dog_license_number, name, owner } = body;
     console.log(`
     ----------------------------------------

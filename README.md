@@ -27,3 +27,17 @@ Pipes have two typical use cases:
 2. validation: evaluate input data and if valid, simply pass it through unchanged; otherwise, throw an exception when the data is incorrect
 
 > [implementation-directory](./pipes/)
+
+# Interceptors
+
+An interceptor is a class annotated with the @Injectable() decorator, which implements the NestInterceptor interface.
+
+Interceptors have a set of useful capabilities which are inspired by the Aspect Oriented Programming (AOP) technique. They make it possible to:
+
+1. bind extra logic before / after method execution
+2. transform the result returned from a function
+3. transform the exception thrown from a function
+4. extend the basic function behavior
+5. completely override a function depending on specific conditions (e.g., for caching purposes)
+
+> [implementation-directory](./interceptors/)
